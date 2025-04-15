@@ -1,0 +1,27 @@
+{
+  "name": "workers-assets-gen",
+  "version": "0.31.0",
+  "description": "[![Go Reference](https://pkg.go.dev/badge/github.com/syumai/workers.svg)](https://pkg.go.dev/github.com/syumai/workers) [![Discord Server](https://img.shields.io/discord/1095344956421447741?logo=discord&style=social)](https://discord.gg/tYhtatRqGs)",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonr-io/workers.git"
+  },
+  "goBinary": {
+    "name": "workers-assets-gen",
+    "path": "./bin",
+    "url": "https://github.com/sonr-io/workers/releases/download/v{{version}}/workers-assets-gen_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonr-io/workers/issues"
+  },
+  "homepage": "https://github.com/sonr-io/workers#readme",
+  "dependencies": {
+    "go-npm": "^0.1.9"
+  }
+}

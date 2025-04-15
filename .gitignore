@@ -3,3 +3,5 @@ build
 node_modules
 .wrangler
 .dev.vars
+# Added by goreleaser init:
+dist/

@@ -12,3 +12,11 @@ build-examples:
 		cd $$dir && GOOS=js GOARCH=wasm go build -o ./build/app.wasm; \
 		cd ../../; \
 	done
+
+release:
+	goreleaser release --clean
+
+snapshot:
+	goreleaser release --snapshot --clean
+
+.PHONY: release snapshot
